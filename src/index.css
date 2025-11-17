@@ -15,8 +15,11 @@
     --font-serif: "DM Serif Text", serif;
 }
 
-html,
-body {
+
+
+
+
+html, body {
     width: 100%;
     background-color: black;
     color: white;
@@ -68,7 +71,7 @@ body {
         @apply fixed z-50 w-full;
 
         div {
-            @apply flex md:flex-row flex-col md:justify-between items-center gap-5 py-5 lg:px-0 px-5 container mx-auto;
+            @apply flex md:flex-row flex-col md:justify-between items-center gap-5 py-5 lg:px-0 lg:w-[90%] px-5 container mx-auto;
         }
 
         p {
@@ -104,7 +107,7 @@ body {
         }
 
         .body {
-            @apply container mx-auto absolute left-1/2 -translate-x-1/2 lg:bottom-20 top-auto md:top-[30vh] flex justify-between items-end px-5;
+            @apply container mx-auto absolute left-1/2 lg:w-300 -translate-x-1/2 lg:bottom-20 top-auto md:top-[30vh] flex justify-between items-end px-5;
 
             .content {
                 @apply flex lg:flex-row flex-col w-full gap-10 justify-between items-center lg:items-end mx-auto;
@@ -148,7 +151,7 @@ body {
         }
 
         .list {
-            @apply container mx-auto relative z-10 flex md:flex-row flex-col justify-between items-start gap-20 pt-40 2xl:px-0 px-5;
+            @apply container mx-auto relative z-10 flex md:flex-row flex-col justify-center items-start gap-20 lg:gap-150 pt-40 2xl:px-0 px-5;
 
             .popular {
                 @apply space-y-8 w-full md:w-fit;
@@ -185,7 +188,7 @@ body {
     }
 
     #about {
-        @apply min-h-screen py-28 2xl:px-0 px-5 container mx-auto;
+        @apply min-h-screen lg:w-[83rem] py-28 2xl:px-0 px-5 container mx-auto;
 
         .content {
             @apply grid grid-cols-1 lg:grid-cols-12 gap-5;
@@ -257,14 +260,14 @@ body {
 
         .masked-container {
             h2 {
-                @apply text-4xl md:text-5xl font-modern-negra text-center mb-10 text-white mt-32;
+                @apply text-4xl md:text-5xl font-modern-negra text-center mb-10 text-white mt-25;
             }
 
             div {
-                @apply opacity-0 md:px-0 px-5 space-y-5 absolute md:bottom-5 bottom-52 left-1/2 -translate-x-1/2;
+                @apply opacity-0 md:px-0 px-5 w-full space-y-5 absolute md:bottom-5 bottom-52 left-1/2 -translate-x-1/2;
 
                 h3 {
-                    @apply md:text-5xl text-2xl text-center font-serif md:w-full w-80 text-white;
+                    @apply md:text-5xl text-5xl text-center mt-20 font-serif md:w-full text-white;
                 }
 
                 p {
@@ -294,7 +297,7 @@ body {
         }
 
         .content {
-            @apply flex flex-col justify-between items-center container mx-auto relative;
+            @apply flex flex-col justify-between items-center max-w-[80rem] container mx-auto relative;
 
             .arrows {
                 @apply flex items-center justify-between w-full absolute;
